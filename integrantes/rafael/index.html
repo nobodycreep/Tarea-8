@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rafael Tenesaca - Portafolio de animación 2D y videojuegos | Art Design">
+    <title>Rafael Tenesaca · Portafolio · Art Design</title>
+    <link rel="stylesheet" href="../../estilos.css">
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header class="cabecera">
+        <p class="etiqueta">ART DESIGN · INTEGRANTE</p>
+        <h1>Rafael <span>Tenesaca</span></h1>
+        <p>Animación 2D cuadro por cuadro y diseño de videojuegos</p>
+        <p><a href="../../index.html">Volver al equipo</a></p>
+        <hr>
+    </header>
+
+    <main>
+
+        <!-- A. IDENTIDAD CREATIVA -->
+        <section>
+            <h2>Identidad creativa</h2>
+            <div class="perfil">
+                <img src="imagenes/perfil.jpeg" alt="Ilustración estilizada de un bosque de acuarela con una laguna y una criatura andina">
+                <div>
+                    <p>Soy <strong>Rafael Tenesaca</strong>, estudiante de Diseño Multimedia en la Universidad Politécnica Salesiana. Me gusta dar vida a los dibujos: animo <em>cuadro por cuadro</em> y diseño videojuegos donde dibujar es parte de la aventura.</p>
+                    <h3>Mis intereses multimedia</h3>
+                    <ul>
+                        <li>Animación 2D cuadro por cuadro.</li>
+                        <li>Videojuegos independientes con arte hecho a mano.</li>
+                        <li>Ilustración inspirada en las leyendas y paisajes de Cuenca.</li>
+                    </ul>
+                    <p>Quiero diseñar contenidos donde el movimiento y el dibujo cuenten historias, aplicando principios de animación como el timing, la anticipación y el squash and stretch.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- B. MIS TRABAJOS CREATIVOS -->
+        <section>
+            <h2>Mis trabajos creativos</h2>
+
+            <div class="proyectos">
+
+                <article class="panel">
+                    <h3>Trazos del Tomebamba</h3>
+                    <figure>
+                        <img src="imagenes/proyecto1.jpg" alt="Ilustración a lápiz y acuarela de una joven con un lápiz brillante frente a un río y montañas dibujadas a mano">
+                        <figcaption>Concepto visual del videojuego Trazos del Tomebamba.</figcaption>
+                    </figure>
+                    <p>Videojuego independiente de aventura donde cada línea que dibuja el jugador se convierte en puentes, escudos y criaturas.</p>
+                    <p><strong>Técnica o herramienta:</strong> dibujo a lápiz y acuarela, diseño de juego.</p>
+                </article>
+
+                <article class="panel">
+                    <h3>Gato negro en movimiento</h3>
+                    <video controls width="640">
+                        <source src="videos/Cambiazo.mp4" type="video/mp4">
+                        <figcaption>Cuadro de la animación del gato negro, formato 1080x1080.</figcaption>
+                    </video>
+                    <p>Animación corta cuadro por cuadro de un gato negro en estilo silueta con ojos blancos, trabajada con masa, anticipación y follow-through.</p>
+                    <p><strong>Técnica o herramienta:</strong> Adobe Animate, 12 FPS, 1080x1080.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- C. EXPERIENCIA MULTIMEDIA -->
+        <section>
+            <h2>Experiencia multimedia</h2>
+
+            <h3>Audio ambiental</h3>
+            <audio controls>
+                <source src="audio/ambiente.mp3" type="audio/mpeg">
+                Tu navegador no admite el reproductor de audio.
+            </audio>
+
+            <h3>Video de presentación</h3>
+            <video controls width="640">
+                <source src="videos/Giro.mp4" type="video/mp4">
+                Tu navegador no admite el reproductor de video.
+            </video>
+
+            <p>El audio ambiental es el tipo de música suave que imagino de fondo en mis animaciones y en los paisajes de mis videojuegos. El video presenta mis dos trabajos en secuencia, mostrando cómo el dibujo se convierte en movimiento. Ambos recursos resumen mi perfil: contar historias con ilustración, animación y sonido.</p>
+        </section>
+
+        <!-- D. FORMULARIO DE CONTACTO -->
+
+        <section class="panel" id="laboratorio">
+            <h2>🎨 Mi laboratorio generativo</h2>
+            <h3>Gatos en la ciudad</h3>
+            <p>Un afiche digital que cambia cada vez que lo generas</p>
+            <p class="ayuda">Cómo usarlo: elige una paleta, pulsa "Generar composición" para crear una variación nueva y "Guardar PNG" para descargar tu afiche.</p>
+
+            <canvas id="lienzo" width="600" height="800">
+                Tu navegador no soporta Canvas.
+            </canvas>
+
+            <div class="controles">
+                <button id="btnPaleta1">Paleta 1</button>
+                <button id="btnPaleta2">Paleta 2</button>
+                <button id="btnGenerar">Generar composición</button>
+                <button id="btnPNG">Guardar PNG</button>
+            </div>
+        </section>
+
+
+        <!-- E. FORMULARIO DE CONTACTO -->
+        <section>
+            <h2>Contacto</h2>
+            <p class="ayuda"><strong>Formulario demostrativo:</strong> no guarda datos ni envía mensajes reales. Pruébalo solo con datos ficticios.</p>
+
+            <form class="panel" action="#" method="get">
+
+                <label for="nombre">Nombre del visitante</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="proyecto">Tipo de proyecto de interés</label>
+                <select id="proyecto" name="proyecto" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="animacion">Animación 2D</option>
+                    <option value="videojuego">Videojuego</option>
+                    <option value="ilustracion">Ilustración</option>
+                </select>
+
+                <p><strong>Modalidad de colaboración</strong></p>
+                <label class="opcion">
+                    <input type="radio" name="modalidad" value="presencial" required> Presencial
+                </label>
+                <label class="opcion">
+                    <input type="radio" name="modalidad" value="virtual"> Virtual
+                </label>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar (demostración)</button>
+            </form>
+        </section>
+
+        <!-- F. NAVEGACIÓN -->
+        <section>
+            <a class="boton" href="../../index.html">Volver al equipo</a>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <hr>
+        <p>Desarrollado por <strong>Rafael Tenesaca</strong> · Art Design · Carrera de Diseño Multimedia · Universidad Politécnica Salesiana (2026).</p>
+    </footer>
+
+    <script src="canvas.js"></script>
+
+</body>
+</html>

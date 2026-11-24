@@ -1,0 +1,294 @@
+/* ART DESIGN · ESTILOS CSS
+   Estilos compartidos del colectivo */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #100B18;
+    color: #F0EAF7;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* CABECERA */
+
+.cabecera {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(
+        135deg,
+        #1C1428,
+        #382452,
+        #8955C7
+    );
+}
+
+.etiqueta {
+    color: #C9A7F5;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 58px);
+    line-height: 1.15;
+    margin: 12px 0;
+}
+
+h1 span {
+    color: #C9A7F5;
+}
+
+/* CONTENIDO */
+
+main {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #C9A7F5;
+}
+
+h3 {
+    color: #A77BE0;
+}
+
+a {
+    color: #C9A7F5;
+}
+
+a:hover {
+    color: white;
+}
+
+/* SECCIONES Y PANELES */
+
+section {
+    margin-bottom: 40px;
+}
+
+.panel {
+    background: #1C1428;
+    border: 1px solid #382452;
+    padding: 25px;
+    border-radius: 18px;
+}
+
+/* TARJETAS DE INTEGRANTES (landing) */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.tarjeta {
+    background: #1C1428;
+    border: 1px solid #382452;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.tarjeta img {
+    width: 20%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.tarjeta p {
+    color: #C9B9D9;
+}
+
+/* Enlaces con forma de botón */
+
+.boton {
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 9px;
+    background: #8955C7;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.boton:hover {
+    background: #543574;
+    color: white;
+}
+
+/* PÁGINA PERSONAL */
+
+.perfil {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+    gap: 24px;
+    align-items: center;
+}
+
+.perfil img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+figure {
+    margin: 0 0 16px 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+figcaption {
+    font-size: 13px;
+    color: #C9B9D9;
+    margin-top: 8px;
+}
+
+audio,
+video {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    margin: 12px 0;
+    border-radius: 12px;
+}
+
+/* FORMULARIO */
+
+form label {
+    display: block;
+    margin: 16px 0 6px 0;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #543574;
+    border-radius: 9px;
+    background: #100B18;
+    color: #F0EAF7;
+    font-size: 15px;
+}
+
+form .opcion {
+    display: inline-block;
+    margin: 6px 16px 6px 0;
+    font-weight: normal;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 9px;
+    background: #8955C7;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #543574;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #C9A7F5;
+    outline-offset: 3px;
+}
+
+.ayuda {
+    font-size: 13px;
+    color: #C9B9D9;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    text-align: center;
+    background: #0A0710;
+    color: #C9B9D9;
+    padding: 22px;
+}
+
+/* LABORATORIO GENERATIVO */
+
+canvas {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid #543574;
+    border-radius: 12px;
+}
+
+.controles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.controles button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 9px;
+    background: #8955C7;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.controles button:hover {
+    background: #543574;
+}
+
+.controles button:focus-visible {
+    outline: 3px solid #C9A7F5;
+    outline-offset: 3px;
+}
+
+/* PANTALLAS PEQUEÑAS */
+
+@media (max-width: 800px) {
+
+    .tarjetas,
+    .perfil,
+    .proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecera {
+        padding: 40px 20px;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+}
